@@ -1,0 +1,3460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TITAN WHEY PAKISTAN | Premium Performance Nutrition</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <style>
+        :root {
+            --primary-black: #0a0a0a;
+            --primary-gold: #D4AF37;
+            --primary-navy: #0F1A3A;
+            --accent-blue: #2563eb;
+            --accent-teal: #0D9488;
+            --text-main: #1f2937;
+            --text-light: #6b7280;
+            --bg-gray: #f9fafb;
+            --bg-light: #fefefe;
+            --white: #ffffff;
+            --gradient-primary: linear-gradient(135deg, #0a0a0a 0%, #0F1A3A 100%);
+            --gradient-gold: linear-gradient(135deg, #D4AF37 0%, #F4C542 100%);
+            --gradient-blue: linear-gradient(135deg, #2563eb 0%, #0D9488 100%);
+            --shadow-luxury: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            --shadow-subtle: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            --transition-smooth: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+            --shadow-premium: 0 20px 60px rgba(0, 0, 0, 0.08);
+            --border-premium: 1px solid rgba(212, 175, 55, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* --- Enhanced Top Header (Image 1 Style) --- */
+        .top-header {
+            background: var(--primary-black);
+            color: var(--white);
+            padding: 10px 0;
+            font-size: 0.85rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .top-header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .top-header-left, .top-header-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .top-header a {
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition-smooth);
+        }
+
+        .top-header a:hover {
+            color: var(--primary-gold);
+        }
+
+        .header-divider {
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        .language-selector, .currency-selector {
+            position: relative;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .language-dropdown, .currency-dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: var(--white);
+            color: var(--primary-black);
+            min-width: 120px;
+            box-shadow: var(--shadow-subtle);
+            border-radius: 4px;
+            padding: 10px 0;
+            display: none;
+            z-index: 1000;
+        }
+
+        .language-dropdown a, .currency-dropdown a {
+            color: var(--primary-black);
+            padding: 8px 15px;
+            display: block;
+        }
+
+        .language-dropdown a:hover, .currency-dropdown a:hover {
+            background: var(--bg-gray);
+            color: var(--primary-gold);
+        }
+
+        .language-selector:hover .language-dropdown,
+        .currency-selector:hover .currency-dropdown {
+            display: block;
+        }
+
+        /* --- Main Navigation --- */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            background: var(--white);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow-subtle);
+            transition: var(--transition-smooth);
+        }
+
+        nav.scrolled {
+            padding: 10px 5%;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.8rem;
+            font-weight: 900;
+            letter-spacing: -1px;
+            text-transform: uppercase;
+            color: var(--primary-black);
+        }
+
+        .logo span {
+            color: var(--primary-gold);
+        }
+
+        .logo-icon {
+            font-size: 1.8rem;
+            color: var(--primary-gold);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 35px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--primary-black);
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: var(--transition-smooth);
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background: var(--primary-gold);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-gold);
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            background: var(--bg-gray);
+            border-radius: 4px;
+            padding: 8px 15px;
+            width: 200px;
+        }
+
+        .search-box input {
+            border: none;
+            background: transparent;
+            outline: none;
+            width: 100%;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .search-box i {
+            color: var(--text-light);
+        }
+
+        .cart-icon {
+            position: relative;
+            cursor: pointer;
+            font-size: 1.2rem;
+            color: var(--primary-black);
+            transition: var(--transition-smooth);
+        }
+
+        .cart-icon:hover {
+            color: var(--primary-gold);
+        }
+
+        #cart-count {
+            background: var(--primary-gold);
+            color: white;
+            font-size: 0.7rem;
+            padding: 3px 7px;
+            border-radius: 50%;
+            position: absolute;
+            top: -12px;
+            right: -12px;
+            font-weight: 700;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--primary-black);
+        }
+
+        /* --- Luxury Hero Slider --- */
+        .hero-slider {
+            position: relative;
+            height: 85vh;
+            overflow: hidden;
+        }
+
+        .slider-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+        }
+
+        .slide.active {
+            opacity: 1;
+        }
+
+        .slide-content {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 5%;
+            color: var(--white);
+        }
+
+        .slide-content h1 {
+            font-size: 4.5rem;
+            margin-bottom: 20px;
+            line-height: 1.1;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .slide-content p {
+            font-size: 1.3rem;
+            margin-bottom: 35px;
+            max-width: 600px;
+            opacity: 0.9;
+        }
+
+        .slide-indicators {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+        }
+
+        .indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: var(--transition-smooth);
+        }
+
+        .indicator.active {
+            background: var(--primary-gold);
+            transform: scale(1.2);
+        }
+
+        .slider-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            pointer-events: none;
+        }
+
+        .slider-btn {
+            pointer-events: all;
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            backdrop-filter: blur(5px);
+        }
+
+        .slider-btn:hover {
+            background: var(--primary-gold);
+            transform: scale(1.1);
+        }
+
+        /* --- Luxury Button --- */
+        .btn {
+            background: var(--gradient-gold);
+            color: var(--primary-black);
+            padding: 18px 40px;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 4px;
+            display: inline-block;
+            transition: var(--transition-smooth);
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: var(--shadow-subtle);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.7s ease;
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-luxury);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary-gold);
+            color: var(--primary-gold);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary-gold);
+            color: var(--primary-black);
+        }
+
+        /* --- ENHANCED Products Section with Swiper Carousel --- */
+        .products-section {
+            padding: 100px 0;
+            background: var(--bg-gray);
+        }
+
+        .section-title {
+            text-align: center;
+            padding: 0 5% 60px;
+        }
+
+        .section-title h2 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            color: var(--primary-black);
+        }
+
+        .section-title p {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Swiper Container */
+        .swiper-container {
+            width: 100%;
+            padding: 20px 0 60px;
+            position: relative;
+        }
+
+        .swiper {
+            padding: 0 40px;
+        }
+
+        .swiper-slide {
+            height: auto;
+        }
+
+        .product-card {
+            background: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: var(--transition-smooth);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            position: relative;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-card:hover {
+            box-shadow: var(--shadow-luxury);
+            transform: translateY(-10px);
+        }
+
+        .product-badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: var(--primary-gold);
+            color: var(--primary-black);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            z-index: 2;
+        }
+
+        .product-image {
+            height: 280px;
+            background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-image img {
+            max-width: 70%;
+            max-height: 70%;
+            object-fit: contain;
+            transition: var(--transition-smooth);
+        }
+
+        .product-card:hover .product-image img {
+            transform: scale(1.05);
+        }
+
+        .product-info {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-category {
+            color: var(--primary-gold);
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .product-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: var(--primary-black);
+        }
+
+        .product-flavor {
+            color: var(--text-light);
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+
+        .product-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .feature-tag {
+            background: var(--bg-gray);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .product-price {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            color: var(--primary-black);
+            margin-top: auto;
+        }
+
+        .product-price span {
+            font-size: 1rem;
+            color: var(--text-light);
+            text-decoration: line-through;
+            margin-left: 10px;
+        }
+
+        .product-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: auto;
+        }
+
+        .product-actions button {
+            flex: 1;
+            padding: 12px;
+            font-weight: 600;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+        }
+
+        .swiper-button-next, .swiper-button-prev {
+            background: var(--white);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            box-shadow: var(--shadow-subtle);
+            color: var(--primary-black);
+            transition: var(--transition-smooth);
+        }
+
+        .swiper-button-next:after, .swiper-button-prev:after {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .swiper-button-next:hover, .swiper-button-prev:hover {
+            background: var(--primary-gold);
+            color: var(--white);
+            transform: scale(1.1);
+        }
+
+        .swiper-pagination-bullet {
+            width: 12px;
+            height: 12px;
+            background: #ddd;
+            opacity: 1;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: var(--primary-gold);
+        }
+
+        /* Product Categories */
+        .product-categories {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+            padding: 0 5%;
+        }
+
+        .category-btn {
+            padding: 12px 25px;
+            background: var(--white);
+            border: 1px solid #eee;
+            border-radius: 30px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+        }
+
+        .category-btn.active, .category-btn:hover {
+            background: var(--primary-gold);
+            color: var(--primary-black);
+            border-color: var(--primary-gold);
+        }
+
+        /* --- Enhanced Deal of the Week Section (After Products) --- */
+        .deal-section {
+            padding: 80px 5%;
+            background: var(--gradient-primary);
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .deal-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 40%;
+            height: 100%;
+            background: url('https://shop.biotechusa.com/cdn/shop/files/IWZ_Platinum_1816g_Chocolate_8l_600x600_b4526b25-20f5-4e93-85ac-eeea929d7643.png?v=1762958822') no-repeat center;
+            background-size: contain;
+            opacity: 0.1;
+        }
+
+        .deal-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            max-width: 1200px;
+            margin: 0 auto;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .deal-content {
+            padding: 40px 0;
+        }
+
+        .deal-content h2 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+
+        .deal-content p {
+            opacity: 0.9;
+            margin-bottom: 30px;
+            line-height: 1.7;
+            font-size: 1.1rem;
+        }
+
+        .deal-price {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--primary-gold);
+            margin-bottom: 30px;
+        }
+
+        .deal-timer {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .timer-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            min-width: 80px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .timer-value {
+            font-size: 2rem;
+            font-weight: 800;
+            display: block;
+            margin-bottom: 5px;
+            color: var(--primary-gold);
+        }
+
+        .timer-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: 0.8;
+        }
+
+        .deal-image {
+            text-align: center;
+            position: relative;
+        }
+
+        .deal-image img {
+            max-width: 100%;
+            max-height: 500px;
+            object-fit: contain;
+            filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.3));
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .deal-badge {
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            background: #ef4444;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-weight: 800;
+            font-size: 0.9rem;
+            z-index: 3;
+            transform: rotate(15deg);
+            box-shadow: var(--shadow-subtle);
+        }
+
+        /* --- Special Features Section --- */
+        .features-section {
+            padding: 100px 5%;
+            background: var(--bg-gray);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background: var(--white);
+            padding: 40px 30px;
+            border-radius: 12px;
+            text-align: center;
+            transition: var(--transition-smooth);
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-luxury);
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            font-size: 2rem;
+            color: var(--primary-black);
+        }
+
+        .feature-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        /* --- Enhanced Blog Section (Nutrition/Fitness Content) --- */
+        .blog-section {
+            padding: 100px 5%;
+            background: var(--white);
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto 60px;
+        }
+
+        .blog-post {
+            background: var(--bg-gray);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: var(--transition-smooth);
+            border: var(--border-premium);
+            box-shadow: var(--shadow-premium);
+        }
+
+        .blog-post:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-luxury);
+        }
+
+        .blog-post-image {
+            height: 250px;
+            background: linear-gradient(135deg, #0a0a0a 0%, #0F1A3A 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .blog-post-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition-smooth);
+        }
+
+        .blog-post:hover .blog-post-image img {
+            transform: scale(1.05);
+        }
+
+        .blog-post-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 25px 0;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .blog-post-date {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .blog-post-comments {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .blog-post-content {
+            padding: 20px 25px 30px;
+        }
+
+        .blog-post-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--primary-black);
+            line-height: 1.3;
+        }
+
+        .blog-post-content p {
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+
+        .blog-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 40px;
+            border-top: 1px solid #eee;
+        }
+
+        .blog-feature {
+            text-align: center;
+            padding: 30px;
+            background: var(--bg-gray);
+            border-radius: 8px;
+            transition: var(--transition-smooth);
+        }
+
+        .blog-feature:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .blog-feature h4 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--primary-gold);
+        }
+
+        .blog-feature p {
+            color: var(--text-light);
+        }
+
+        /* --- Premium FAQ Section --- */
+        .faq-section {
+            padding: 100px 5%;
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+        }
+
+        .faq-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--white);
+            border-radius: 12px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            border: var(--border-premium);
+            box-shadow: var(--shadow-premium);
+            transition: var(--transition-smooth);
+        }
+
+        .faq-item:hover {
+            box-shadow: var(--shadow-luxury);
+        }
+
+        .faq-question {
+            padding: 25px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            background: var(--white);
+            border-bottom: 1px solid transparent;
+        }
+
+        .faq-question span {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--primary-black);
+            flex: 1;
+        }
+
+        .faq-question i {
+            color: var(--primary-gold);
+            font-size: 1.2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            padding: 0 30px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease, padding 0.3s ease;
+            background: linear-gradient(to right, rgba(212, 175, 55, 0.05), transparent);
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 0 30px 30px;
+            max-height: 500px;
+        }
+
+        .faq-answer p {
+            color: var(--text-main);
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .faq-answer ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .faq-answer li {
+            margin-bottom: 8px;
+            color: var(--text-light);
+        }
+
+        .faq-subheading {
+            font-weight: 600;
+            color: var(--primary-gold);
+            margin: 15px 0 10px;
+            display: block;
+        }
+
+        /* --- Professional Order Forms --- */
+        .form-tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .form-tab {
+            padding: 12px 30px;
+            background: transparent;
+            border: none;
+            border-radius: 4px 4px 0 0;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            color: var(--text-light);
+        }
+
+        .form-tab.active {
+            background: var(--primary-gold);
+            color: var(--primary-black);
+        }
+
+        .form-content {
+            display: none;
+        }
+
+        .form-content.active {
+            display: block;
+        }
+
+        /* --- Order Form Section --- */
+        .order-form-section {
+            padding: 100px 5%;
+            background: var(--gradient-primary);
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .order-form-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 40%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?q=80&w=2070') no-repeat center;
+            background-size: cover;
+            opacity: 0.1;
+        }
+
+        .order-form-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .order-form-content h3 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--white);
+            text-align: center;
+        }
+
+        .order-form-content p {
+            margin-bottom: 40px;
+            opacity: 0.9;
+            font-size: 1.1rem;
+            text-align: center;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .order-form-wrapper {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            padding: 50px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group.full-width {
+            grid-column: span 2;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--white);
+            opacity: 0.9;
+        }
+
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+            color: var(--white);
+            font-size: 1rem;
+            transition: var(--transition-smooth);
+            font-family: 'Inter', sans-serif;
+        }
+
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-gold);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .order-summary {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 25px;
+            border-radius: 8px;
+            margin-top: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .order-summary h4 {
+            margin-bottom: 20px;
+            color: var(--primary-gold);
+        }
+
+        .summary-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .summary-total {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* --- Enhanced Login Modal --- */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 3000;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(5px);
+        }
+
+        .modal-content {
+            background: var(--white);
+            border-radius: 16px;
+            width: 90%;
+            max-width: 500px;
+            overflow: hidden;
+            animation: modalFadeIn 0.3s ease;
+            border: var(--border-premium);
+            box-shadow: var(--shadow-luxury);
+        }
+
+        @keyframes modalFadeIn {
+            from { opacity: 0; transform: translateY(-20px) scale(0.95); }
+            to { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        .modal-header {
+            background: var(--gradient-primary);
+            color: var(--white);
+            padding: 30px;
+            text-align: center;
+            position: relative;
+        }
+
+        .modal-header h3 {
+            font-size: 1.8rem;
+            margin: 0;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            font-size: 1.5rem;
+            transition: var(--transition-smooth);
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        .close-modal:hover {
+            color: var(--primary-gold);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .modal-body {
+            padding: 40px;
+        }
+
+        .form-options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            font-size: 0.9rem;
+        }
+
+        .remember-me {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .forgot-password {
+            color: var(--primary-gold);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+
+        .modal-footer {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 0.9rem;
+        }
+
+        .modal-footer a {
+            color: var(--primary-gold);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .modal-footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Enhanced form inputs */
+        .modal-body .form-group {
+            margin-bottom: 20px;
+        }
+
+        .modal-body .form-group label {
+            color: var(--text-main);
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .modal-body .form-group input {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: var(--transition-smooth);
+            background: var(--white);
+            color: var(--text-main);
+        }
+
+        .modal-body .form-group input:focus {
+            outline: none;
+            border-color: var(--primary-gold);
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+        }
+
+        /* --- Shopping Cart Sidebar --- */
+        #cart-sidebar {
+            position: fixed;
+            right: -450px;
+            top: 0;
+            width: 400px;
+            height: 100vh;
+            background: var(--white);
+            box-shadow: -5px 0 30px rgba(0, 0, 0, 0.15);
+            transition: var(--transition-smooth);
+            z-index: 2000;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #cart-sidebar.active {
+            right: 0;
+        }
+
+        .cart-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px;
+            border-bottom: 1px solid #eee;
+            background: var(--gradient-primary);
+            color: var(--white);
+        }
+
+        .cart-header h3 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        .close-cart {
+            cursor: pointer;
+            font-size: 1.5rem;
+            font-weight: 300;
+            transition: var(--transition-smooth);
+        }
+
+        .close-cart:hover {
+            color: var(--primary-gold);
+        }
+
+        .cart-items {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 25px;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .cart-item-info h4 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .cart-item-info p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        .cart-item-price {
+            font-weight: 700;
+            color: var(--primary-black);
+        }
+
+        .cart-item-remove {
+            color: #ef4444;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2rem;
+            margin-left: 15px;
+        }
+
+        .cart-footer {
+            padding: 25px;
+            border-top: 1px solid #eee;
+        }
+
+        .cart-total {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.3rem;
+            font-weight: 800;
+            margin-bottom: 25px;
+            color: var(--primary-black);
+        }
+
+        /* --- Luxury Footer --- */
+        footer {
+            background: var(--gradient-primary);
+            color: var(--white);
+            padding: 80px 5% 40px;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            max-width: 1400px;
+            margin: 0 auto 50px;
+        }
+
+        .footer-col h4 {
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            color: var(--white);
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-col h4::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 40px;
+            height: 2px;
+            background: var(--primary-gold);
+        }
+
+        .footer-logo {
+            font-size: 2rem;
+            font-weight: 900;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .footer-logo span {
+            color: var(--primary-gold);
+        }
+
+        .footer-about p {
+            opacity: 0.8;
+            margin-bottom: 25px;
+            line-height: 1.7;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition-smooth);
+        }
+
+        .social-links a:hover {
+            background: var(--primary-gold);
+            color: var(--primary-black);
+            transform: translateY(-3px);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: var(--transition-smooth);
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-gold);
+            padding-left: 5px;
+        }
+
+        .contact-info {
+            list-style: none;
+        }
+
+        .contact-info li {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .contact-info i {
+            color: var(--primary-gold);
+            margin-right: 15px;
+            font-size: 1.1rem;
+            margin-top: 3px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+
+        /* --- Enhanced Form Validation --- */
+        .form-group.error input,
+        .form-group.error select,
+        .form-group.error textarea {
+            border-color: #ef4444;
+        }
+
+        .error-message {
+            color: #ef4444;
+            font-size: 0.85rem;
+            margin-top: 5px;
+            display: none;
+        }
+
+        .form-group.error .error-message {
+            display: block;
+        }
+
+        .success-message {
+            background: #10b981;
+            color: white;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            text-align: center;
+            display: none;
+        }
+
+        /* --- Pakistan Specific Styles --- */
+        .pk-badge {
+            background: linear-gradient(135deg, #01411C 0%, #006400 100%);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            display: inline-block;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+
+        .cities-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .city-tag {
+            background: rgba(212, 175, 55, 0.1);
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: var(--primary-gold);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        /* --- Responsive Design --- */
+        @media (max-width: 1200px) {
+            .footer-container {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 50px 30px;
+            }
+            
+            .deal-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .deal-timer {
+                justify-content: center;
+            }
+            
+            .deal-section::before {
+                width: 100%;
+                opacity: 0.05;
+            }
+            
+            .deal-image {
+                order: -1;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .nav-links {
+                gap: 25px;
+            }
+            
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .form-group.full-width {
+                grid-column: span 1;
+            }
+            
+            .order-form-section::before {
+                width: 100%;
+                opacity: 0.05;
+            }
+            
+            .slide-content h1 {
+                font-size: 3.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .nav-links {
+                position: fixed;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background: var(--white);
+                flex-direction: column;
+                padding: 30px;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+                transform: translateY(-100%);
+                opacity: 0;
+                transition: var(--transition-smooth);
+                z-index: 999;
+            }
+            
+            .nav-links.active {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            
+            .search-box {
+                display: none;
+            }
+            
+            .top-header {
+                font-size: 0.7rem;
+            }
+            
+            .top-header-content {
+                flex-direction: column;
+                gap: 5px;
+                text-align: center;
+            }
+            
+            .slide-content h1 {
+                font-size: 2.8rem;
+            }
+            
+            .slide-content p {
+                font-size: 1.1rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2.5rem;
+            }
+            
+            #cart-sidebar {
+                width: 100%;
+                right: -100%;
+            }
+            
+            .deal-content h2 {
+                font-size: 2.2rem;
+            }
+            
+            .swiper {
+                padding: 0 20px;
+            }
+            
+            .order-form-wrapper {
+                padding: 30px 20px;
+            }
+            
+            .modal-body {
+                padding: 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .slide-content h1 {
+                font-size: 2.2rem;
+            }
+            
+            .product-actions {
+                flex-direction: column;
+            }
+            
+            .hero-slider {
+                height: 70vh;
+            }
+            
+            .timer-box {
+                min-width: 60px;
+                padding: 15px 10px;
+            }
+            
+            .timer-value {
+                font-size: 1.5rem;
+            }
+            
+            .deal-badge {
+                top: -10px;
+                right: -10px;
+                padding: 8px 15px;
+                font-size: 0.8rem;
+            }
+            
+            .form-tabs {
+                flex-direction: column;
+            }
+            
+            .form-tab {
+                width: 100%;
+            }
+            
+            .faq-question {
+                padding: 20px;
+            }
+            
+            .faq-answer {
+                padding: 0 20px;
+            }
+            
+            .faq-item.active .faq-answer {
+                padding: 0 20px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Enhanced Top Header for Pakistan -->
+    <div class="top-header">
+        <div class="top-header-content">
+            <div class="top-header-left">
+                <a href="mailto:support@titanwheypk.com">
+                    <i class="fas fa-envelope"></i> support@titanwheypk.com
+                </a>
+                <span class="header-divider">|</span>
+                <a href="tel:+923001234567">
+                    <i class="fas fa-phone"></i> +92 300 1234567
+                </a>
+                <span class="header-divider">|</span>
+                <span><i class="fas fa-map-marker-alt"></i> Lahore, Pakistan</span>
+            </div>
+            <div class="top-header-right">
+                <div class="currency-selector">
+                    <i class="fas fa-rupee-sign"></i> PKR
+                    <div class="currency-dropdown">
+                        <a href="#">PKR (₨)</a>
+                        <a href="#">USD ($)</a>
+                    </div>
+                </div>
+                <span class="header-divider">|</span>
+                <div class="language-selector">
+                    <i class="fas fa-globe"></i> English/اردو
+                    <div class="language-dropdown">
+                        <a href="#">English</a>
+                        <a href="#">اردو</a>
+                    </div>
+                </div>
+                <span class="header-divider">|</span>
+                <a href="#" id="open-login">
+                    <i class="fas fa-user"></i> Login/Register
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav id="mainNav">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-dumbbell logo-icon"></i>
+                <span>TITAN</span>WHEY
+                <span class="pk-badge">PAKISTAN</span>
+            </div>
+            
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#deal">Deal of Week</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#order">Orders</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Search products...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="cart-icon" onclick="toggleCart()">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span id="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Luxury Hero Slider -->
+    <section class="hero-slider" id="home">
+        <div class="slider-container">
+            <!-- Slide 1 -->
+            <div class="slide active" style="background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(15, 26, 58, 0.8)), url('https://storage.googleapis.com/upload-tiendada-prod/public/file-storage/im/product/c0218fb9-54eb-4b7f-a8e7-2d3d3a56d3c2.a9pfej-1709180306680');">
+                <div class="slide-content">
+                    <h1>PREMIUM NUTRITION FOR PAKISTANI ATHLETES</h1>
+                    <p>Lab-tested, scientifically formulated protein supplements for athletes who demand the best. Now available across Pakistan!</p>
+                    <button class="btn" onclick="document.getElementById('products').scrollIntoView()">SHOP NOW</button>
+                </div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="slide" style="background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(15, 26, 58, 0.8)), url('https://images.unsplash.com/photo-1546483875-ad9014c88eba?q=80&w=2070');">
+                <div class="slide-content">
+                    <h1>GRASS-FED WHEY ISOLATE</h1>
+                    <p>27g of pure protein per serving with zero fillers, artificial sweeteners, or hormones.</p>
+                    <button class="btn" onclick="filterProducts('whey')">EXPLORE WHEY</button>
+                </div>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="slide" style="background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(15, 26, 58, 0.8)), url('https://images.unsplash.com/photo-1594736797933-d0caa813f2c6?q=80&w=2070');">
+                <div class="slide-content">
+                    <h1>NOW AVAILABLE IN ALL MAJOR CITIES</h1>
+                    <p>Fast delivery to Lahore, Karachi, Islamabad, Rawalpindi, Faisalabad, and more!</p>
+                    <div class="cities-list">
+                        <span class="city-tag">Lahore</span>
+                        <span class="city-tag">Karachi</span>
+                        <span class="city-tag">Islamabad</span>
+                        <span class="city-tag">Rawalpindi</span>
+                        <span class="city-tag">Faisalabad</span>
+                    </div>
+                    <button class="btn" onclick="filterProducts('vegan')">EXPLORE VEGAN</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="slider-nav">
+            <button class="slider-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        
+        <div class="slide-indicators" id="slideIndicators">
+            <div class="indicator active" data-slide="0"></div>
+            <div class="indicator" data-slide="1"></div>
+            <div class="indicator" data-slide="2"></div>
+        </div>
+    </section>
+
+    <!-- ENHANCED Products Section with Automatic Sliding Carousel -->
+    <section class="products-section" id="products">
+        <div class="container">
+            <div class="section-title">
+                <h2>Premium Performance Nutrition <span class="pk-badge">PAKISTAN</span></h2>
+                <p>Discover our scientifically formulated supplements designed for maximum absorption and results. Prices in Pakistani Rupees (PKR).</p>
+            </div>
+            
+            <div class="product-categories" id="productCategories">
+                <button class="category-btn active" data-filter="all">All Products</button>
+                <button class="category-btn" data-filter="whey">Whey Protein</button>
+                <button class="category-btn" data-filter="casein">Casein</button>
+                <button class="category-btn" data-filter="vegan">Vegan Protein</button>
+                <button class="category-btn" data-filter="mass">Mass Gainers</button>
+                <button class="category-btn" data-filter="amino">Amino Acids</button>
+                <button class="category-btn" data-filter="creatine">Creatine</button>
+            </div>
+            
+            <div class="swiper-container">
+                <div class="swiper" id="productSwiper">
+                    <div class="swiper-wrapper" id="productContainer">
+                        <!-- Products will be dynamically generated here -->
+                    </div>
+                    <!-- Add navigation buttons -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- Add pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UPDATED Blog Section with Nutrition/Fitness Content -->
+    <section class="blog-section" id="blog">
+        <div class="container">
+            <div class="section-title">
+                <h2>Fitness & Nutrition Insights</h2>
+                <p>Latest research, tips, and expert advice from the world of sports nutrition and fitness.</p>
+            </div>
+            
+            <div class="blog-grid">
+                <div class="blog-post">
+                    <div class="blog-post-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcJp4HwAKVzS2PtjRP5GxEYnwQJ9USjDKJe-MXwCRVFw&s=10" alt="Protein Timing for Muscle Growth">
+                    </div>
+                    <div class="blog-post-meta">
+                        <span class="blog-post-date">
+                            <i class="far fa-calendar"></i> March 15, 2024
+                        </span>
+                        <span class="blog-post-comments">
+                            <i class="far fa-comment"></i> 12 Comments
+                        </span>
+                    </div>
+                    <div class="blog-post-content">
+                        <h3>The Science of Protein Timing: When to Take Your Supplements</h3>
+                        <p>Discover the latest research on protein timing for optimal muscle protein synthesis. Learn about the anabolic window, pre vs. post-workout nutrition, and how to maximize your gains.</p>
+                    </div>
+                </div>
+                
+                <div class="blog-post">
+                    <div class="blog-post-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVvVxdsaCw0yaseF8xdzoLp0kP-vXPw-11mWzt28BvhQ&s=10" alt="Vegetarian Protein Sources">
+                    </div>
+                    <div class="blog-post-meta">
+                        <span class="blog-post-date">
+                            <i class="far fa-calendar"></i> March 8, 2024
+                        </span>
+                        <span class="blog-post-comments">
+                            <i class="far fa-comment"></i> 8 Comments
+                        </span>
+                    </div>
+                    <div class="blog-post-content">
+                        <h3>Complete Guide to Plant-Based Proteins for Athletes</h3>
+                        <p>Exploring the best vegan protein sources, amino acid profiles, and how to combine plant proteins for maximum muscle recovery and growth.</p>
+                    </div>
+                </div>
+                
+                <div class="blog-post">
+                    <div class="blog-post-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaeRhFPGxxePtNawAgFaFBsu47afJkLtQTOOiZOq4YsQ&s=10" alt="Supplements for Endurance">
+                    </div>
+                    <div class="blog-post-meta">
+                        <span class="blog-post-date">
+                            <i class="far fa-calendar"></i> March 1, 2024
+                        </span>
+                        <span class="blog-post-comments">
+                            <i class="far fa-comment"></i> 15 Comments
+                        </span>
+                    </div>
+                    <div class="blog-post-content">
+                        <h3>Essential Supplements for Endurance Athletes in Pakistan</h3>
+                        <p>From hydration strategies to glycogen replenishment, learn which supplements can enhance your endurance performance in Pakistan's climate.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="blog-features">
+                <div class="blog-feature">
+                    <h4>FREE DELIVERY</h4>
+                    <p>Across major cities in Pakistan</p>
+                </div>
+                <div class="blog-feature">
+                    <h4>CASH ON DELIVERY</h4>
+                    <p>Available nationwide</p>
+                </div>
+                <div class="blog-feature">
+                    <h4>PAKISTAN MADE</h4>
+                    <p>Quality tested locally</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose Titan Whey Pakistan?</h2>
+                <p>We're committed to delivering the highest quality supplements with science-backed formulations tailored for Pakistani athletes.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Lab-Tested in Pakistan</h3>
+                    <p>Every batch undergoes testing in certified Pakistani labs for purity, potency, and heavy metal screening.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Halal Certified</h3>
+                    <p>All our products are Halal certified, ensuring compliance with Islamic dietary requirements.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Nationwide Delivery</h3>
+                    <p>Fast delivery across Pakistan with cash on delivery available in all major cities.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>30-Day Guarantee</h3>
+                    <p>Not satisfied? Get a full refund within 30 days. No questions asked.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Deal of the Week Section -->
+    <section class="deal-section" id="deal">
+        <div class="deal-container">
+            <div class="deal-content">
+                <h2>Deal Of The Week</h2>
+                <p>Our premium ISO-Whey Platinum protein is now available at an incredible discount. Perfect for athletes who demand the best in performance nutrition. Limited stock available!</p>
+                <div class="deal-price">₨8,499 <span style="font-size: 1.5rem; opacity: 0.8; margin-left: 10px;">(Regular: ₨14,999)</span></div>
+                <div class="deal-timer" id="deal-timer">
+                    <div class="timer-box">
+                        <span class="timer-value" id="days">30</span>
+                        <span class="timer-label">Days</span>
+                    </div>
+                    <div class="timer-box">
+                        <span class="timer-value" id="hours">08</span>
+                        <span class="timer-label">Hours</span>
+                    </div>
+                    <div class="timer-box">
+                        <span class="timer-value" id="minutes">24</span>
+                        <span class="timer-label">Minutes</span>
+                    </div>
+                    <div class="timer-box">
+                        <span class="timer-value" id="seconds">26</span>
+                        <span class="timer-label">Seconds</span>
+                    </div>
+                </div>
+                <button class="btn" onclick="addDealToCart()">GET THIS DEAL</button>
+                <p style="margin-top: 20px; opacity: 0.8; font-size: 0.9rem;"><i class="fas fa-shipping-fast"></i> Free shipping in Lahore & Karachi | <i class="fas fa-money-bill-wave"></i> Cash on delivery available</p>
+            </div>
+            <div class="deal-image">
+                <div class="deal-badge">43% OFF</div>
+                <img src="https://shop.biotechusa.com/cdn/shop/files/IWZ_Platinum_1816g_Chocolate_8l_600x600_b4526b25-20f5-4e93-85ac-eeea929d7643.png?v=1762958822" alt="Protein Supplement Deal">
+            </div>
+        </div>
+    </section>
+
+    <!-- PREMIUM FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Comprehensive answers to help you make informed decisions about your nutrition.</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What makes Titan Whey different from other protein brands in Pakistan?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Titan Whey Pakistan uses only imported grass-fed whey protein combined with local testing and quality control. Our products are specifically formulated for the Pakistani climate and athlete needs.</p>
+                        <span class="faq-subheading">Key Differentiators:</span>
+                        <ul>
+                            <li>Halal Certified by recognized Islamic bodies</li>
+                            <li>Third-party tested in Pakistani laboratories</li>
+                            <li>Climate-appropriate packaging to maintain freshness</li>
+                            <li>Formulated considering common dietary patterns in Pakistan</li>
+                            <li>Direct import cutting out middlemen for better pricing</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How long does shipping take within Pakistan?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer tiered shipping options based on your location:</p>
+                        <span class="faq-subheading">Major Cities (Lahore, Karachi, Islamabad, Rawalpindi):</span>
+                        <p>1-2 business days with express delivery available</p>
+                        
+                        <span class="faq-subheading">Other Metropolitan Areas:</span>
+                        <p>3-4 business days via our premium courier partners</p>
+                        
+                        <span class="faq-subheading">Remote Areas:</span>
+                        <p>5-7 business days with tracking provided</p>
+                        
+                        <p>All orders placed before 2 PM are processed same day. You'll receive SMS updates at every stage of delivery.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Are your products suitable for specific dietary requirements in Pakistan?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we cater to various dietary needs common in Pakistan:</p>
+                        
+                        <span class="faq-subheading">Halal Compliance:</span>
+                        <p>All products are Halal certified with certification available upon request.</p>
+                        
+                        <span class="faq-subheading">Vegetarian/Vegan Options:</span>
+                        <p>Our plant-based range is completely vegetarian and vegan friendly.</p>
+                        
+                        <span class="faq-subheading">Gluten-Free:</span>
+                        <p>Most products are gluten-free (clearly marked on packaging).</p>
+                        
+                        <span class="faq-subheading">Lactose Sensitivity:</span>
+                        <p>We offer whey isolate products with minimal lactose content.</p>
+                        
+                        <span class="faq-subheading">Diabetic Friendly:</span>
+                        <p>Several products use natural sweeteners suitable for diabetics.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What payment methods do you accept in Pakistan?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer multiple secure payment options tailored for Pakistani customers:</p>
+                        
+                        <span class="faq-subheading">Cash on Delivery (COD):</span>
+                        <p>Available nationwide with no extra charges</p>
+                        
+                        <span class="faq-subheading">Bank Transfers:</span>
+                        <p>Direct bank transfer to our official accounts</p>
+                        
+                        <span class="faq-subheading">EasyPaisa/JazzCash:</span>
+                        <p>Instant payment via mobile wallets</p>
+                        
+                        <span class="faq-subheading">Credit/Debit Cards:</span>
+                        <p>Visa, MasterCard through secure payment gateways</p>
+                        
+                        <span class="faq-subheading">Bank Installments:</span>
+                        <p>3-12 month installment plans through partner banks</p>
+                        
+                        <p>All transactions are secured with SSL encryption and PCI compliance.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How should I store my protein powder in Pakistan's climate?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Pakistan's varying climate requires specific storage considerations:</p>
+                        
+                        <span class="faq-subheading">Humidity Control:</span>
+                        <p>Store in airtight containers with silica gel packets to prevent clumping</p>
+                        
+                        <span class="faq-subheading">Temperature:</span>
+                        <p>Keep below 25°C, away from direct sunlight and heat sources</p>
+                        
+                        <span class="faq-subheading">Summer Storage:</span>
+                        <p>During extreme heat, consider refrigeration (not freezing)</p>
+                        
+                        <span class="faq-subheading">Monsoon Precautions:</span>
+                        <p>Use vacuum-sealed containers during humid months</p>
+                        
+                        <span class="faq-subheading">Shelf Life:</span>
+                        <p>Unopened: 24 months | Opened: 3-4 months with proper storage</p>
+                        
+                        <p>Our packaging includes moisture-resistant barriers specifically designed for Pakistani conditions.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you offer bulk discounts for gyms and sports teams in Pakistan?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we have comprehensive bulk purchase programs:</p>
+                        
+                        <span class="faq-subheading">Gym Partnerships:</span>
+                        <p>15-25% discount based on monthly volume with free branded shakers</p>
+                        
+                        <span class="faq-subheading">Sports Teams:</span>
+                        <p>Special rates for university, club, and professional teams</p>
+                        
+                        <span class="faq-subheading">Corporate Wellness:</span>
+                        <p>Customized programs for corporate clients</p>
+                        
+                        <span class="faq-subheading">Retail Store Stocking:</span>
+                        <p>Attractive margins for fitness stores across Pakistan</p>
+                        
+                        <span class="faq-subheading">Custom Labeling:</span>
+                        <p>Available for orders above 100 units</p>
+                        
+                        <p>Contact our bulk sales team at bulk@titanwheypk.com or call +92 42 1234567 for customized quotes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Order Form Section -->
+    <section class="order-form-section" id="order">
+        <div class="container">
+            <div class="order-form-container">
+                <div class="order-form-content">
+                    <h3>Professional Order Management</h3>
+                    <p>Place your order with confidence. Our detailed order form captures all necessary information for a seamless shopping experience.</p>
+                </div>
+                
+                <div class="order-form-wrapper">
+                    <div class="form-tabs">
+                        <button class="form-tab active" data-tab="individual">Individual Order</button>
+                        <button class="form-tab" data-tab="bulk">Bulk/Custom Order</button>
+                        <button class="form-tab" data-tab="register">Register Account</button>
+                    </div>
+                    
+                    <!-- Individual Order Form -->
+                    <div class="form-content active" id="individual-form">
+                        <form id="individualOrderForm">
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="fullName">Full Name *</label>
+                                    <input type="text" id="fullName" required>
+                                    <div class="error-message">Please enter your full name</div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" required>
+                                    <div class="error-message">Please enter a valid email</div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="phone">Phone Number *</label>
+                                    <input type="tel" id="phone" required placeholder="+92 300 1234567">
+                                    <div class="error-message">Please enter a valid Pakistani phone number</div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="country">City *</label>
+                                    <select id="country" required>
+                                        <option value="">Select City</option>
+                                        <option value="Lahore">Lahore</option>
+                                        <option value="Karachi">Karachi</option>
+                                        <option value="Islamabad">Islamabad</option>
+                                        <option value="Rawalpindi">Rawalpindi</option>
+                                        <option value="Faisalabad">Faisalabad</option>
+                                        <option value="Multan">Multan</option>
+                                        <option value="Peshawar">Peshawar</option>
+                                        <option value="Quetta">Quetta</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                    <div class="error-message">Please select your city</div>
+                                </div>
+                                
+                                <div class="form-group full-width">
+                                    <label for="address">Complete Address *</label>
+                                    <textarea id="address" required placeholder="House/Street #, Area, Sector, etc."></textarea>
+                                    <div class="error-message">Please enter your complete address</div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="productSelect">Select Product *</label>
+                                    <select id="productSelect" required>
+                                        <option value="">Choose Product</option>
+                                        <option value="iso-whey">ISO-Whey Gold - ₨11,999</option>
+                                        <option value="iso-platinum">ISO-Whey Platinum - ₨14,999</option>
+                                        <option value="casein">Night Casein Elite - ₨10,499</option>
+                                        <option value="vegan">Vegan Pro Fusion - ₨9,999</option>
+                                    </select>
+                                    <div class="error-message">Please select a product</div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="quantity">Quantity *</label>
+                                    <select id="quantity" required>
+                                        <option value="1">1 unit</option>
+                                        <option value="2">2 units</option>
+                                        <option value="3">3 units</option>
+                                        <option value="5">5 units</option>
+                                        <option value="10">10 units</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group full-width">
+                                    <label for="shippingMethod">Shipping Method *</label>
+                                    <select id="shippingMethod" required>
+                                        <option value="standard">Standard Delivery (3-5 days) - Free</option>
+                                        <option value="express">Express Delivery (1-2 days) - ₨300</option>
+                                        <option value="overnight">Same Day Delivery - ₨800</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group full-width">
+                                    <label for="paymentMethod">Payment Method *</label>
+                                    <select id="paymentMethod" required>
+                                        <option value="cod">Cash on Delivery</option>
+                                        <option value="card">Credit/Debit Card</option>
+                                        <option value="easypaisa">EasyPaisa</option>
+                                        <option value="jazzcash">JazzCash</option>
+                                        <option value="bank">Bank Transfer</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group full-width">
+                                    <label for="specialInstructions">Special Instructions</label>
+                                    <textarea id="specialInstructions" placeholder="Any special delivery instructions or notes..."></textarea>
+                                </div>
+                            </div>
+                            
+                            <div class="order-summary">
+                                <h4>Order Summary</h4>
+                                <div class="summary-item">
+                                    <span>Product:</span>
+                                    <span id="summary-product">-</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span>Quantity:</span>
+                                    <span id="summary-quantity">-</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span>Shipping:</span>
+                                    <span id="summary-shipping">-</span>
+                                </div>
+                                <div class="summary-total">
+                                    <span>Total:</span>
+                                    <span id="summary-total">-</span>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn" style="width: 100%; margin-top: 30px;">PLACE ORDER NOW</button>
+                        </form>
+                    </div>
+                    
+                    <!-- Bulk Order Form -->
+                    <div class="form-content" id="bulk-form">
+                        <form id="bulkOrderForm">
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="companyName">Company/Organization *</label>
+                                    <input type="text" id="companyName" required>
+                                    <div class="error-message">Please enter company name</div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="contactPerson">Contact Person *</label>
+                                    <input type="text" id="contactPerson" required>
+                                    <div class="error-message">Please enter contact person</div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="bulkEmail">Email Address *</label>
+                                    <input type="email" id="bulkEmail" required>
+                                    <div class="error-message">Please enter valid email</div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="bulkPhone">Phone Number *</label>
+                                    <input type="tel" id="bulkPhone" required placeholder="+92 300 1234567">
+                                    <div class="error-message">Please enter valid phone</div>
+                                </div>
+                                
+                                <div class="form-group full-width">
+                                    <label for="bulkProductType">Product Type *</label>
+                                    <select id="bulkProductType" required>
+                                        <option value="">Select product type</option>
+                                        <option value="whey">Whey Protein</option>
+                                        <option value="casein">Casein Protein</option>
+                                        <option value="vegan">Plant-Based Protein</option>
+                                        <option value="mass">Mass Gainer</option>
+                                        <option value="custom">Custom Formulation</option>
+                                    </select>
+                                    <div class="error-message">Please select product type</div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="bulkQuantity">Estimated Quantity *</label>
+                                    <select id="bulkQuantity" required>
+                                        <option value="">Select quantity range</option>
+                                        <option value="10-50">10-50 units</option>
+                                        <option value="50-100">50-100 units</option>
+                                        <option value="100-500">100-500 units</option>
+                                        <option value="500+">500+ units</option>
+                                    </select>
+                                    <div class="error-message">Please select quantity</div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="targetDate">Target Delivery Date</label>
+                                    <input type="date" id="targetDate">
+                                </div>
+                                
+                                <div class="form-group full-width">
+                                    <label for="bulkRequirements">Specific Requirements *</label>
+                                    <textarea id="bulkRequirements" required placeholder="Tell us about your specific needs, customization requirements, labeling preferences, etc."></textarea>
+                                    <div class="error-message">Please enter requirements</div>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn" style="width: 100%;">REQUEST BULK QUOTE</button>
+                        </form>
+                    </div>
+                    
+                    <!-- Registration Form -->
+                    <div class="form-content" id="register-form">
+                        <form id="registrationForm">
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="regFirstName">First Name *</label>
+                                    <input type="text" id="regFirstName" required>
+                                    <div class="error-message">Please enter first name</div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="regLastName">Last Name *</label>
+                                    <input type="text" id="regLastName" required>
+                                    <div class="error-message">Please enter last name</div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="regEmail">Email Address *</label>
+                                    <input type="email" id="regEmail" required>
+                                    <div class="error-message">Please enter valid email</div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="regPhone">Phone Number *</label>
+                                    <input type="tel" id="regPhone" required placeholder="+92 300 1234567">
+                                    <div class="error-message">Please enter valid phone</div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="regPassword">Password *</label>
+                                    <input type="password" id="regPassword" required minlength="8">
+                                    <div class="error-message">Minimum 8 characters required</div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="regConfirmPassword">Confirm Password *</label>
+                                    <input type="password" id="regConfirmPassword" required>
+                                    <div class="error-message">Passwords do not match</div>
+                                </div>
+                                
+                                <div class="form-group full-width">
+                                    <label for="regAddress">Address</label>
+                                    <textarea id="regAddress" placeholder="For faster checkout"></textarea>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="regCity">City</label>
+                                    <input type="text" id="regCity">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="regZip">ZIP Code</label>
+                                    <input type="text" id="regZip">
+                                </div>
+                                
+                                <div class="form-group full-width">
+                                    <div class="remember-me">
+                                        <input type="checkbox" id="newsletter" checked>
+                                        <label for="newsletter">Subscribe to newsletter for exclusive offers</label>
+                                    </div>
+                                    <div class="remember-me">
+                                        <input type="checkbox" id="terms" required>
+                                        <label for="terms">I agree to the Terms & Conditions *</label>
+                                    </div>
+                                    <div class="error-message" id="terms-error">You must accept terms & conditions</div>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn" style="width: 100%;">CREATE ACCOUNT</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Login/Register Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Account Access</h3>
+                <span class="close-modal" id="closeLogin">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="success-message" id="modalSuccessMessage"></div>
+                
+                <div class="form-tabs" style="margin-bottom: 30px;">
+                    <button class="form-tab active" data-tab="modal-login">Login</button>
+                    <button class="form-tab" data-tab="modal-register">Register</button>
+                </div>
+                
+                <div class="form-content active" id="modal-login">
+                    <form id="modalLoginForm">
+                        <div class="form-group">
+                            <label for="modal-login-email">Email Address</label>
+                            <input type="email" id="modal-login-email" required>
+                            <div class="error-message">Please enter valid email</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="modal-login-password">Password</label>
+                            <input type="password" id="modal-login-password" required>
+                            <div class="error-message">Please enter password</div>
+                        </div>
+                        
+                        <div class="form-options">
+                            <div class="remember-me">
+                                <input type="checkbox" id="modal-remember">
+                                <label for="modal-remember">Remember me</label>
+                            </div>
+                            <a href="#" class="forgot-password">Forgot Password?</a>
+                        </div>
+                        
+                        <button type="submit" class="btn" style="width: 100%;">LOGIN</button>
+                    </form>
+                </div>
+                
+                <div class="form-content" id="modal-register">
+                    <form id="modalRegisterForm">
+                        <div class="form-group">
+                            <label for="modal-reg-email">Email Address *</label>
+                            <input type="email" id="modal-reg-email" required>
+                            <div class="error-message">Please enter valid email</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="modal-reg-password">Password *</label>
+                            <input type="password" id="modal-reg-password" required minlength="8">
+                            <div class="error-message">Minimum 8 characters required</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="modal-reg-confirm">Confirm Password *</label>
+                            <input type="password" id="modal-reg-confirm" required>
+                            <div class="error-message">Passwords do not match</div>
+                        </div>
+                        
+                        <div class="remember-me" style="margin-bottom: 20px;">
+                            <input type="checkbox" id="modal-terms" required>
+                            <label for="modal-terms">I agree to the Terms & Conditions *</label>
+                        </div>
+                        <div class="error-message" id="modal-terms-error" style="margin-bottom: 15px;">You must accept terms & conditions</div>
+                        
+                        <button type="submit" class="btn" style="width: 100%;">CREATE ACCOUNT</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shopping Cart Sidebar -->
+    <div id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Shopping Cart</h3>
+            <span class="close-cart" onclick="toggleCart()">×</span>
+        </div>
+        <div class="cart-items" id="cart-items-list">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">₨0.00</span>
+            </div>
+            <button class="btn" style="width: 100%;" onclick="checkout()">PROCEED TO CHECKOUT</button>
+            <p style="text-align: center; margin-top: 15px; font-size: 0.8rem; color: var(--text-light);">Cash on delivery available nationwide</p>
+        </div>
+    </div>
+
+    <!-- Luxury Footer for Pakistan -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <div class="footer-logo">TITAN<span>WHEY</span> <span class="pk-badge" style="font-size: 0.7rem; margin-left: 5px;">PK</span></div>
+                    <div class="footer-about">
+                        <p>Premium performance nutrition for Pakistani athletes. We deliver the cleanest, most effective supplements backed by science and local testing.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="#products">Whey Protein</a></li>
+                        <li><a href="#products">Casein Protein</a></li>
+                        <li><a href="#products">Vegan Protein</a></li>
+                        <li><a href="#products">Mass Gainers</a></li>
+                        <li><a href="#products">Amino Acids</a></li>
+                        <li><a href="#products">Creatine</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#">Lab Testing</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+                        <li><a href="#">Store Locator</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Customer Service</strong>
+                                <p>+92 42 1234567<br>+92 300 1234567 (WhatsApp)</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <p>support@titanwheypk.com<br>orders@titanwheypk.com</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Headquarters</strong>
+                                <p>123 Fitness Street, DHA Phase 5<br>Lahore, Pakistan</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2024 Titan Whey Pakistan. All Rights Reserved. | <a href="#" style="color: var(--primary-gold); text-decoration: none;">Privacy Policy</a> | <a href="#" style="color: var(--primary-gold); text-decoration: none;">Terms of Service</a> | <a href="#" style="color: var(--primary-gold); text-decoration: none;">Halal Certification</a></p>
+                <p style="margin-top: 10px; font-size: 0.8rem;">*Products are intended for healthy adults. Consult your physician before starting any supplement regimen. Not for use by individuals under 18.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        // Luxury Product Data with Pakistani prices
+        const products = [
+            { id: 1, name: "ISO-Whey Gold", flavor: "Dutch Chocolate", price: 11999, originalPrice: 14999, tag: "Best Seller", category: "whey", image: "https://storage.googleapis.com/upload-tiendada-prod/public/file-storage/im/product/c0218fb9-54eb-4b7f-a8e7-2d3d3a56d3c2.a9pfej-1709180306680", features: ["27g Protein", "Grass-Fed", "Zero Sugar"] },
+            { id: 2, name: "ISO-Whey Platinum", flavor: "French Vanilla", price: 14999, originalPrice: 18999, tag: "Premium", category: "whey", image: "https://shop.biotechusa.com/cdn/shop/files/IWZ_Platinum_1816g_Chocolate_8l_600x600_b4526b25-20f5-4e93-85ac-eeea929d7643.png?v=1762958822", features: ["28g Protein", "Ultra-Filtered", "Lactose Free"] },
+            { id: 3, name: "Night Casein Elite", flavor: "Cookies & Cream", price: 10499, tag: "Overnight Recovery", category: "casein", image: "https://www.tigerfitness.com/cdn/shop/products/dymatize-elite-casein-2060536-249366_700x700.jpg?v=1701816959", features: ["24g Protein", "Slow Release", "Anti-Catabolic"] },
+            { id: 4, name: "Vegan Pro Fusion", flavor: "Salted Caramel", price: 9999, tag: "Plant-Based", category: "vegan", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDeljbcKz5QX1MT-IxuGl4Feft9-CFmLLt09DAChok-ZCRzIFl7qRIs_FF&s=10", features: ["22g Protein", "Pea & Rice Blend", "Complete AA Profile"] },
+            { id: 5, name: "Mass Titan Gainer", flavor: "Chocolate Peanut Butter", price: 15999, tag: "Weight Gain", category: "mass", image: "https://sarawak.borneobodybuilding.com/image/cache/data/1/Collagen/TITAN%20MASS-500x500.png", features: ["1250 Calories", "50g Protein", "Complex Carbs"] },
+            { id: 6, name: "BCAA 2:1:1 Matrix", flavor: "Watermelon", price: 6999, tag: "Intra-Workout", category: "amino", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx791HEB0gqoYb42Qzgf2V6tHa7eRoSURxmPzXc-jtP6GeU9rdls5zOzKU&s=10", features: ["Leucine Rich", "Electrolytes", "Zero Calories"] },
+            { id: 7, name: "Creatine Monohydrate", flavor: "Unflavored", price: 5499, tag: "Strength & Power", category: "creatine", image: "https://sarawak.borneobodybuilding.com/image/cache/data/1/Collagen/TITAN%20MASS-500x500.png", features: ["5g Per Serving", "Micronized", "Third-Party Tested"] },
+            { id: 8, name: "Whey Hydrolysate", flavor: "Strawberry", price: 13999, originalPrice: 16999, tag: "Fast Absorption", category: "whey", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx791HEB0gqoYb42Qzgf2V6tHa7eRoSURxmPzXc-jtP6GeU9rdls5zOzKU&s=10", features: ["30g Protein", "Pre-Digested", "Post-Workout"] },
+            { id: 9, name: "Plant Protein Complete", flavor: "Vanilla Chai", price: 8999, tag: "Vegan", category: "vegan", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWbTXydH8oCgI2huVhJ0llErTxnvEMQD4_aXcQ8RtW8g&s=10", features: ["20g Protein", "Superfood Blend", "Digestive Enzymes"] },
+            { id: 10, name: "Casein Pro", flavor: "Chocolate Brownie", price: 11499, tag: "Night Time", category: "casein", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0KrP8ZWkai3qfjbrPd7ZL2mQmkXGMcEhLJ_AakvW-Ag&s=10", features: ["26g Protein", "Micellar Casein", "Gluten Free"] },
+            { id: 11, name: "Amino Energy", flavor: "Blue Raspberry", price: 7999, tag: "Pre-Workout", category: "amino", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyy2SeJXGRUI9OmJOhhChgnSurCSxM_nnJUGr76pVIgXkdYwbV72WKtT_6&s=10", features: ["BCAAs + EAAs", "Natural Caffeine", "Focus Blend"] },
+            { id: 12, name: "Mass Monster", flavor: "Vanilla Ice Cream", price: 17999, tag: "Weight Gain", category: "mass", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZzeChiS3fQF-fLdy8q43AbABaVPMhrrtRNaL_VuM_a0gPlJznruk8BZo&s=10", features: ["1500 Calories", "60g Protein", "Healthy Fats"] }
+        ];
+
+        let cart = [];
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const indicators = document.querySelectorAll('.indicator');
+        let slideInterval;
+        let productSwiper;
+
+        // Initialize the website
+        document.addEventListener('DOMContentLoaded', function() {
+            initProductsSwiper();
+            initSlider();
+            setupEventListeners();
+            updateCartUI();
+            initDealTimer();
+            initFAQ();
+            initOrderForms();
+            initLoginRegister();
+            
+            // Nav scroll effect
+            window.addEventListener('scroll', function() {
+                const nav = document.getElementById('mainNav');
+                if (window.scrollY > 50) {
+                    nav.classList.add('scrolled');
+                } else {
+                    nav.classList.remove('scrolled');
+                }
+            });
+        });
+
+        // Initialize Swiper for products
+        function initProductsSwiper() {
+            const container = document.getElementById('productContainer');
+            container.innerHTML = products.map(product => `
+                <div class="swiper-slide">
+                    <div class="product-card" data-category="${product.category}">
+                        ${product.tag ? `<div class="product-badge">${product.tag}</div>` : ''}
+                        <div class="product-image">
+                            <img src="${product.image}" alt="${product.name}">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">${getCategoryName(product.category)}</span>
+                            <h3>${product.name}</h3>
+                            <p class="product-flavor">${product.flavor}</p>
+                            <div class="product-features">
+                                ${product.features.map(feature => `<span class="feature-tag">${feature}</span>`).join('')}
+                            </div>
+                            <div class="product-price">
+                                ₨${product.price.toLocaleString()}
+                                ${product.originalPrice ? `<span>₨${product.originalPrice.toLocaleString()}</span>` : ''}
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn" onclick="addToCart(${product.id})">ADD TO CART</button>
+                                <button class="btn btn-outline" onclick="viewProduct(${product.id})">VIEW DETAILS</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+
+            // Initialize Swiper
+            productSwiper = new Swiper('#productSwiper', {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 2,
+                    },
+                    992: {
+                        slidesPerView: 3,
+                    },
+                    1200: {
+                        slidesPerView: 4,
+                    }
+                }
+            });
+        }
+
+        // Initialize slider
+        function initSlider() {
+            slideInterval = setInterval(nextSlide, 5000);
+            
+            // Add event listeners to slider buttons
+            document.getElementById('prevBtn').addEventListener('click', prevSlide);
+            document.getElementById('nextBtn').addEventListener('click', nextSlide);
+            
+            // Add event listeners to indicators
+            indicators.forEach((indicator, index) => {
+                indicator.addEventListener('click', () => {
+                    goToSlide(index);
+                });
+            });
+        }
+
+        // Initialize FAQ functionality
+        function initFAQ() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', function() {
+                    // Close other open FAQ items
+                    document.querySelectorAll('.faq-item.active').forEach(activeItem => {
+                        if (activeItem !== item) {
+                            activeItem.classList.remove('active');
+                        }
+                    });
+                    
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+        }
+
+        // Initialize login/register functionality
+        function initLoginRegister() {
+            // Modal tab switching
+            const modalTabs = document.querySelectorAll('.modal-body .form-tab');
+            modalTabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const tabId = this.getAttribute('data-tab');
+                    
+                    // Update active tab
+                    modalTabs.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Show corresponding form
+                    document.querySelectorAll('.modal-body .form-content').forEach(content => {
+                        content.classList.remove('active');
+                    });
+                    document.getElementById(tabId).classList.add('active');
+                    
+                    // Clear any error messages
+                    clearFormErrors(this.closest('.modal-body'));
+                });
+            });
+            
+            // Modal form submissions
+            document.getElementById('modalLoginForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                if (validateLoginForm()) {
+                    showNotification('Login successful! Welcome to Titan Whey Pakistan.', 'success');
+                    document.getElementById('loginModal').style.display = 'none';
+                    this.reset();
+                }
+            });
+            
+            document.getElementById('modalRegisterForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                if (validateRegisterForm()) {
+                    showNotification('Account created successfully! Welcome to Titan Whey Pakistan.', 'success');
+                    document.getElementById('loginModal').style.display = 'none';
+                    this.reset();
+                }
+            });
+        }
+
+        // Initialize order form functionality
+        function initOrderForms() {
+            // Tab switching for order forms
+            const formTabs = document.querySelectorAll('.form-tab');
+            formTabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const tabId = this.getAttribute('data-tab');
+                    
+                    // Update active tab
+                    formTabs.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Show corresponding form
+                    document.querySelectorAll('.form-content').forEach(content => {
+                        content.classList.remove('active');
+                    });
+                    document.getElementById(`${tabId}-form`).classList.add('active');
+                });
+            });
+            
+            // Update order summary
+            const productSelect = document.getElementById('productSelect');
+            const quantitySelect = document.getElementById('quantity');
+            const shippingSelect = document.getElementById('shippingMethod');
+            
+            function updateOrderSummary() {
+                const productText = productSelect.options[productSelect.selectedIndex].text;
+                const quantity = quantitySelect.value;
+                const shippingText = shippingSelect.options[shippingSelect.selectedIndex].text;
+                
+                // Calculate total
+                let productPrice = 0;
+                if (productSelect.value === 'iso-whey') productPrice = 11999;
+                if (productSelect.value === 'iso-platinum') productPrice = 14999;
+                if (productSelect.value === 'casein') productPrice = 10499;
+                if (productSelect.value === 'vegan') productPrice = 9999;
+                
+                let shippingPrice = 0;
+                if (shippingSelect.value === 'express') shippingPrice = 300;
+                if (shippingSelect.value === 'overnight') shippingPrice = 800;
+                
+                const total = (productPrice * quantity) + shippingPrice;
+                
+                // Update summary
+                document.getElementById('summary-product').textContent = productText;
+                document.getElementById('summary-quantity').textContent = quantity;
+                document.getElementById('summary-shipping').textContent = shippingText;
+                document.getElementById('summary-total').textContent = `₨${total.toLocaleString()}`;
+            }
+            
+            productSelect.addEventListener('change', updateOrderSummary);
+            quantitySelect.addEventListener('change', updateOrderSummary);
+            shippingSelect.addEventListener('change', updateOrderSummary);
+            
+            // Initialize summary
+            updateOrderSummary();
+            
+            // Form submissions with validation
+            document.getElementById('individualOrderForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                if (validateOrderForm()) {
+                    showNotification('Order placed successfully! You will receive confirmation via SMS.', 'success');
+                    this.reset();
+                    updateOrderSummary();
+                }
+            });
+            
+            document.getElementById('bulkOrderForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                if (validateBulkForm()) {
+                    showNotification('Bulk order request submitted! Our sales team will contact you within 24 hours.', 'success');
+                    this.reset();
+                }
+            });
+            
+            document.getElementById('registrationForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                if (validateMainRegisterForm()) {
+                    showNotification('Account created successfully! Welcome to Titan Whey Pakistan.', 'success');
+                    this.reset();
+                }
+            });
+        }
+
+        // Form validation functions
+        function validateLoginForm() {
+            const email = document.getElementById('modal-login-email');
+            const password = document.getElementById('modal-login-password');
+            let isValid = true;
+            
+            clearFormErrors(document.getElementById('modalLoginForm'));
+            
+            if (!email.value || !isValidEmail(email.value)) {
+                markError(email, 'Please enter a valid email address');
+                isValid = false;
+            }
+            
+            if (!password.value) {
+                markError(password, 'Please enter your password');
+                isValid = false;
+            }
+            
+            return isValid;
+        }
+        
+        function validateRegisterForm() {
+            const email = document.getElementById('modal-reg-email');
+            const password = document.getElementById('modal-reg-password');
+            const confirmPassword = document.getElementById('modal-reg-confirm');
+            const terms = document.getElementById('modal-terms');
+            let isValid = true;
+            
+            clearFormErrors(document.getElementById('modalRegisterForm'));
+            
+            if (!email.value || !isValidEmail(email.value)) {
+                markError(email, 'Please enter a valid email address');
+                isValid = false;
+            }
+            
+            if (!password.value || password.value.length < 8) {
+                markError(password, 'Password must be at least 8 characters');
+                isValid = false;
+            }
+            
+            if (password.value !== confirmPassword.value) {
+                markError(confirmPassword, 'Passwords do not match');
+                isValid = false;
+            }
+            
+            if (!terms.checked) {
+                document.getElementById('modal-terms-error').style.display = 'block';
+                isValid = false;
+            }
+            
+            return isValid;
+        }
+        
+        function validateOrderForm() {
+            const requiredFields = document.querySelectorAll('#individualOrderForm [required]');
+            let isValid = true;
+            
+            clearFormErrors(document.getElementById('individualOrderForm'));
+            
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    markError(field, 'This field is required');
+                    isValid = false;
+                }
+                
+                // Special validation for email
+                if (field.type === 'email' && !isValidEmail(field.value)) {
+                    markError(field, 'Please enter a valid email');
+                    isValid = false;
+                }
+                
+                // Special validation for phone
+                if (field.id === 'phone' && !isValidPakistaniPhone(field.value)) {
+                    markError(field, 'Please enter a valid Pakistani phone number');
+                    isValid = false;
+                }
+            });
+            
+            return isValid;
+        }
+        
+        function validateBulkForm() {
+            const requiredFields = document.querySelectorAll('#bulkOrderForm [required]');
+            let isValid = true;
+            
+            clearFormErrors(document.getElementById('bulkOrderForm'));
+            
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    markError(field, 'This field is required');
+                    isValid = false;
+                }
+            });
+            
+            return isValid;
+        }
+        
+        function validateMainRegisterForm() {
+            const requiredFields = document.querySelectorAll('#registrationForm [required]');
+            const password = document.getElementById('regPassword');
+            const confirmPassword = document.getElementById('regConfirmPassword');
+            const terms = document.getElementById('terms');
+            let isValid = true;
+            
+            clearFormErrors(document.getElementById('registrationForm'));
+            
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    markError(field, 'This field is required');
+                    isValid = false;
+                }
+            });
+            
+            if (password.value !== confirmPassword.value) {
+                markError(confirmPassword, 'Passwords do not match');
+                isValid = false;
+            }
+            
+            if (password.value.length < 8) {
+                markError(password, 'Password must be at least 8 characters');
+                isValid = false;
+            }
+            
+            if (!terms.checked) {
+                document.getElementById('terms-error').style.display = 'block';
+                isValid = false;
+            }
+            
+            return isValid;
+        }
+        
+        function markError(field, message) {
+            const formGroup = field.closest('.form-group');
+            formGroup.classList.add('error');
+            const errorElement = formGroup.querySelector('.error-message');
+            if (errorElement) {
+                errorElement.textContent = message;
+                errorElement.style.display = 'block';
+            }
+        }
+        
+        function clearFormErrors(form) {
+            const errorMessages = form.querySelectorAll('.error-message');
+            errorMessages.forEach(error => {
+                error.style.display = 'none';
+                const formGroup = error.closest('.form-group');
+                if (formGroup) {
+                    formGroup.classList.remove('error');
+                }
+            });
+        }
+        
+        function isValidEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email);
+        }
+        
+        function isValidPakistaniPhone(phone) {
+            const re = /^(\+92|0)[\d\s-]{10,13}$/;
+            return re.test(phone);
+        }
+
+        // Initialize deal timer
+        function initDealTimer() {
+            // Set the end date for the deal (30 days from now)
+            const endDate = new Date();
+            endDate.setDate(endDate.getDate() + 30);
+            endDate.setHours(8, 24, 26, 0);
+            
+            function updateTimer() {
+                const now = new Date().getTime();
+                const timeLeft = endDate - now;
+                
+                if (timeLeft < 0) {
+                    // Deal expired
+                    document.getElementById('deal-timer').innerHTML = '<div class="timer-box"><span class="timer-value">DEAL ENDED</span></div>';
+                    return;
+                }
+                
+                const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+                
+                document.getElementById('days').textContent = days.toString().padStart(2, '0');
+                document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+                document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+                document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+            }
+            
+            updateTimer();
+            setInterval(updateTimer, 1000);
+        }
+
+        // Setup event listeners
+        function setupEventListeners() {
+            // Product category filtering
+            const categoryBtns = document.querySelectorAll('.category-btn');
+            categoryBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    categoryBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Filter products
+                    const filter = this.getAttribute('data-filter');
+                    filterProducts(filter);
+                });
+            });
+            
+            // Mobile menu toggle
+            document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+                document.getElementById('navLinks').classList.toggle('active');
+                this.querySelector('i').classList.toggle('fa-bars');
+                this.querySelector('i').classList.toggle('fa-times');
+            });
+            
+            // Close mobile menu when clicking a link
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', function() {
+                    document.getElementById('navLinks').classList.remove('active');
+                    document.querySelector('#mobileMenuBtn i').classList.remove('fa-times');
+                    document.querySelector('#mobileMenuBtn i').classList.add('fa-bars');
+                });
+            });
+            
+            // Login modal
+            document.getElementById('open-login').addEventListener('click', function(e) {
+                e.preventDefault();
+                document.getElementById('loginModal').style.display = 'flex';
+                // Reset to login tab
+                document.querySelector('[data-tab="modal-login"]').click();
+                clearFormErrors(document.getElementById('modalLoginForm'));
+                clearFormErrors(document.getElementById('modalRegisterForm'));
+            });
+            
+            document.getElementById('closeLogin').addEventListener('click', function() {
+                document.getElementById('loginModal').style.display = 'none';
+            });
+            
+            // Close modal when clicking outside
+            window.addEventListener('click', function(e) {
+                if (e.target === document.getElementById('loginModal')) {
+                    document.getElementById('loginModal').style.display = 'none';
+                }
+            });
+            
+            // Forgot password
+            document.querySelector('.forgot-password').addEventListener('click', function(e) {
+                e.preventDefault();
+                showNotification('Password reset instructions sent to your email.', 'success');
+            });
+        }
+
+        // Filter products by category
+        function filterProducts(category) {
+            if (!productSwiper) return;
+            
+            const slides = productSwiper.slides;
+            let visibleSlides = 0;
+            
+            slides.forEach((slide, index) => {
+                const productCard = slide.querySelector('.product-card');
+                const productCategory = productCard.getAttribute('data-category');
+                
+                if (category === 'all' || productCategory === category) {
+                    slide.style.display = 'block';
+                    visibleSlides++;
+                } else {
+                    slide.style.display = 'none';
+                }
+            });
+            
+            // Update Swiper
+            productSwiper.update();
+            
+            // Show message if no products
+            if (visibleSlides === 0) {
+                document.getElementById('productContainer').innerHTML = `
+                    <div class="swiper-slide" style="text-align: center; padding: 60px 20px;">
+                        <i class="fas fa-box-open" style="font-size: 4rem; color: #ddd; margin-bottom: 20px;"></i>
+                        <h3 style="color: var(--text-light);">No products found in this category</h3>
+                        <p>Try selecting a different category</p>
+                    </div>
+                `;
+                productSwiper.update();
+            }
+        }
+
+        // Get category name
+        function getCategoryName(category) {
+            const names = {
+                'whey': 'Whey Protein',
+                'casein': 'Casein Protein',
+                'vegan': 'Plant-Based',
+                'mass': 'Mass Gainer',
+                'amino': 'Amino Acids',
+                'creatine': 'Creatine'
+            };
+            return names[category] || category;
+        }
+
+        // Add product to cart
+        function addToCart(productId) {
+            const product = products.find(p => p.id === productId);
+            cart.push(product);
+            updateCartUI();
+            
+            // Show cart notification
+            showNotification(`${product.name} added to cart!`, 'success');
+        }
+
+        // Add deal to cart
+        function addDealToCart() {
+            const dealProduct = {
+                id: 99,
+                name: "ISO-Whey Platinum (Deal of the Week)",
+                flavor: "Chocolate",
+                price: 8499,
+                tag: "Special Deal",
+                category: "whey",
+                image: "https://shop.biotechusa.com/cdn/shop/files/IWZ_Platinum_1816g_Chocolate_8l_600x600_b4526b25-20f5-4e93-85ac-eeea929d7643.png?v=1762958822",
+                features: ["28g Protein", "Ultra-Filtered", "Lactose Free", "Limited Time Offer"]
+            };
+            
+            cart.push(dealProduct);
+            updateCartUI();
+            
+            // Show cart notification
+            showNotification(`${dealProduct.name} added to cart!`, 'success');
+            
+            // Open cart on add
+            document.getElementById('cart-sidebar').classList.add('active');
+        }
+
+        // View product details
+        function viewProduct(productId) {
+            const product = products.find(p => p.id === productId);
+            alert(`Product Details:\n\n${product.name} - ${product.flavor}\n\nPrice: ₨${product.price.toLocaleString()}\n\nCategory: ${getCategoryName(product.category)}\n\nFeatures:\n• ${product.features.join('\n• ')}`);
+        }
+
+        // Toggle cart sidebar
+        function toggleCart() {
+            document.getElementById('cart-sidebar').classList.toggle('active');
+        }
+
+        // Update cart UI
+        function updateCartUI() {
+            const count = document.getElementById('cart-count');
+            const list = document.getElementById('cart-items-list');
+            const total = document.getElementById('cart-total');
+            
+            count.innerText = cart.length;
+            
+            if (cart.length === 0) {
+                list.innerHTML = `<div style="text-align: center; padding: 40px; color: #666;">
+                                    <i class="fas fa-shopping-bag" style="font-size: 3rem; margin-bottom: 20px; opacity: 0.3;"></i>
+                                    <p>Your cart is empty.</p>
+                                    <button class="btn" style="margin-top: 20px;" onclick="document.getElementById('products').scrollIntoView()">SHOP NOW</button>
+                                  </div>`;
+                total.innerText = `₨0.00`;
+                return;
+            }
+
+            // Count occurrences of each product
+            const cartCounts = {};
+            cart.forEach(item => {
+                cartCounts[item.id] = (cartCounts[item.id] || 0) + 1;
+            });
+
+            // Get unique products
+            const uniqueProducts = [...new Set(cart.map(item => item.id))];
+            
+            list.innerHTML = uniqueProducts.map(productId => {
+                const product = products.find(p => p.id === productId) || 
+                               (productId === 99 ? { 
+                                   name: "ISO-Whey Platinum (Deal of the Week)", 
+                                   flavor: "Chocolate", 
+                                   price: 8499 
+                               } : { name: "Product", flavor: "", price: 0 });
+                const quantity = cartCounts[productId];
+                const itemTotal = product.price * quantity;
+                
+                return `
+                <div class="cart-item">
+                    <div class="cart-item-info">
+                        <h4>${product.name}</h4>
+                        <p>${product.flavor} × ${quantity}</p>
+                    </div>
+                    <div>
+                        <span class="cart-item-price">₨${itemTotal.toLocaleString()}</span>
+                        <button class="cart-item-remove" onclick="removeFromCart(${productId})"><i class="fas fa-trash"></i></button>
+                    </div>
+                </div>
+                `;
+            }).join('');
+
+            const sum = cart.reduce((acc, item) => acc + item.price, 0);
+            total.innerText = `₨${sum.toLocaleString()}`;
+        }
+
+        // Remove item from cart
+        function removeFromCart(productId) {
+            const index = cart.findIndex(item => item.id === productId);
+            if (index !== -1) {
+                cart.splice(index, 1);
+                updateCartUI();
+                showNotification('Item removed from cart', 'success');
+            }
+        }
+
+        // Checkout function
+        function checkout() {
+            if (cart.length === 0) {
+                alert('Your cart is empty. Add some products first!');
+                return;
+            }
+            
+            const total = cart.reduce((acc, item) => acc + item.price, 0);
+            
+            // Show order confirmation
+            document.getElementById('order').scrollIntoView();
+            document.getElementById('cart-sidebar').classList.remove('active');
+            
+            // Pre-fill order form
+            setTimeout(() => {
+                document.querySelector('[data-tab="individual"]').click();
+                showNotification(`Ready to checkout! Your order total is ₨${total.toLocaleString()}. Please complete the order form.`, 'success');
+            }, 500);
+        }
+
+        // Show notification
+        function showNotification(message, type = 'success') {
+            // Create notification element
+            const notification = document.createElement('div');
+            notification.style.cssText = `
+                position: fixed;
+                top: 100px;
+                right: 20px;
+                background: ${type === 'error' ? '#ef4444' : 'var(--primary-gold)'};
+                color: ${type === 'error' ? 'white' : 'var(--primary-black)'};
+                padding: 15px 25px;
+                border-radius: 8px;
+                font-weight: 600;
+                box-shadow: var(--shadow-luxury);
+                z-index: 9999;
+                transform: translateX(120%);
+                transition: transform 0.3s ease;
+                max-width: 350px;
+                border-left: 4px solid ${type === 'error' ? '#dc2626' : '#b8860b'};
+            `;
+            notification.innerHTML = `<i class="fas fa-${type === 'error' ? 'exclamation-circle' : 'check-circle'}"></i> ${message}`;
+            document.body.appendChild(notification);
+            
+            // Animate in
+            setTimeout(() => {
+                notification.style.transform = 'translateX(0)';
+            }, 10);
+            
+            // Remove after 3 seconds
+            setTimeout(() => {
+                notification.style.transform = 'translateX(120%)';
+                setTimeout(() => {
+                    document.body.removeChild(notification);
+                }, 300);
+            }, 3000);
+        }
+
+        // Slider functions
+        function nextSlide() {
+            goToSlide((currentSlide + 1) % slides.length);
+        }
+
+        function prevSlide() {
+            goToSlide((currentSlide - 1 + slides.length) % slides.length);
+        }
+
+        function goToSlide(n) {
+            // Update current slide
+            slides[currentSlide].classList.remove('active');
+            indicators[currentSlide].classList.remove('active');
+            
+            currentSlide = n;
+            
+            slides[currentSlide].classList.add('active');
+            indicators[currentSlide].classList.add('active');
+            
+            // Reset interval
+            clearInterval(slideInterval);
+            slideInterval = setInterval(nextSlide, 5000);
+        }
+    </script>
+</body>
+</html>
